@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Result Page
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <center>
+        <div class="nav">
+            <a href = "index.html"> Home</a>
+            <a href = "about.html"> About us</a>
+        </div>
+        <h1> Result Page </h1>
+        <h2 id="msg"></h2>
+        <script>
+            let msg = document.getElementById("msg");
+            let res = localStorage.getItem("Result");
+            msg.innerHTML = "Sqaure is: " +res;
+        </script>
+    </center>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Sqaure Finder Application
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+        <center>
+            <div class="nav">
+                <a href = "index.html"> Home</a>
+                <a href = "about.html"> About us</a>
+            </div>
+            <h1> Sqaure Finder Application</h1>
+           
+            <form onsubmit="find()">
+                
+                <input type="number" id="num" placeholder="enter integer">
+                <br/><br/>
+                <input type="submit" value="Find Sqaure">
+            </form>
+            <script>
+                function find(){
+                    event.preventDefault();
+                    let num = document.getElementById("num");
+
+                    if(num.value === ""){
+                        alert("enter a integer")
+                        msg.innerHTML = ""
+                        num.focus();
+                        return;
+                    }
+
+                    let n = parseInt(num.value);
+                    let res = n**2;
+                    localStorage.setItem('Result',res)
+                    window.location.href = "result.html"
+
+                }
+            </script>
+        </center>
+        </body>
+    </head>
+</html>

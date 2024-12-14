@@ -1,0 +1,20 @@
+*{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: beige;
+}
+.nav{
+    background-color: black;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin: 100px;
+}
+.about {
+    border: solid;
+    width: 70%;
+    border-radius: 30px;
+}
